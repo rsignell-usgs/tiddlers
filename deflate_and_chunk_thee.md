@@ -25,7 +25,8 @@ nccopy -d1 -c time/10,lon/20,lat/30 netcdf3.nc netcdf4.nc
 ```
 
 3. **[ncks](http://nco.sourceforge.net/)** (Charlie Zender):  `conda install -c conda-forge nco`
-Let's you specify chuck sizes along any dimension:
+
+I like `ncks` because you can easily chuck sizes along any dimension:
 ```
 ncks -4 -L 1  --cnk_dmn lat,50 --cnk_dmn lon,50 -O netcdf3.nc netcdf4.nc
 ```
